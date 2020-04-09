@@ -3,12 +3,6 @@ body {
   background-color: #f6f7fa;
 }
 
-/* Intro Jumbotron with Parallax */
-#home-jumbotron {
-  background-color: #f6f7fa;
-  height: 700px;
-}
-
 .navbar {
   background-color: #f6f7fa;
 }
@@ -23,8 +17,23 @@ body {
   font-family: "Barlow", sans-serif;
 }
 
+.profile-card {
+  background-color: #f6f7fa;
+}
+.profile-card .profile-img {
+  background-color: red;
+  width: 90vw;
+  height: 500px;
+  overflow: hidden;
+}
 footer {
   background-color: #efefef;
+}
+
+@media only screen and (max-width: 480px) {
+  body {
+    font-size: 20px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
