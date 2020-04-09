@@ -5,34 +5,26 @@ body {
 
 /* Intro Jumbotron with Parallax */
 #home-jumbotron {
-  background-image: url("../images/paint-black.jpg");
-  color: #fff;
+  background-color: #f6f7fa;
   height: 700px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
-#home-jumbotron .navbar-toggler {
+
+.navbar {
+  background-color: #f6f7fa;
+}
+.navbar button {
   border-style: none;
 }
-#home-jumbotron .nav-item {
+.navbar .nav-item {
   margin-right: 30px;
 }
-#home-jumbotron .nav-item .nav-link {
-  color: red;
+.navbar .nav-item .nav-link {
   font-size: 20px;
   font-family: "Barlow", sans-serif;
 }
-#home-jumbotron .container {
-  margin-top: 8%;
-  font-family: "Arapey", serif;
-}
 
-@media only screen and (max-device-width: 1366px) {
-  #home-jumbotron {
-    background-attachment: scroll;
-  }
+footer {
+  background-color: #efefef;
 }
 
 /*# sourceMappingURL=style.css.map */
