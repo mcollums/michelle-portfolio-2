@@ -1,5 +1,9 @@
 @import './variables.scss';
 
+body {
+    background-color: $off-white;
+}
+
 /* Intro Jumbotron with Parallax */
 #home-jumbotron {
     background-image: url('../images/paint-black.jpg');
@@ -9,6 +13,10 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
+    .navbar-toggler {
+        border-style: none;
+    }
     // NavBar Style inside Jumbotron
     .nav-item{ 
         margin-right: 30px;
@@ -25,10 +33,6 @@
         font-family: $font-serif;
     }
 }
-
-// #scene {
-//     background-image: url('../images/paint-black.jpg');
-// }
 
 @media only screen and (max-device-width: 1366px) {
     #home-jumbotron {

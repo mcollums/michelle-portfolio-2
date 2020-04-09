@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Arapey:ital@0;1&family=Barlow:wght@200;300;400;500&display=swap");
+body {
+  background-color: #f6f7fa;
+}
+
 /* Intro Jumbotron with Parallax */
 #home-jumbotron {
   background-image: url("../images/paint-black.jpg");
@@ -8,6 +12,9 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+#home-jumbotron .navbar-toggler {
+  border-style: none;
 }
 #home-jumbotron .nav-item {
   margin-right: 30px;
@@ -20,10 +27,6 @@
 #home-jumbotron .container {
   margin-top: 8%;
   font-family: "Arapey", serif;
-}
-
-#scene {
-  background-image: url("../images/paint-black.jpg");
 }
 
 @media only screen and (max-device-width: 1366px) {
