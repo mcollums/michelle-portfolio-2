@@ -1,22 +1,33 @@
 $(document).ready(function(){
-
-
+    
+    // CLICK HANDLERS
+    // ========================================================================
     const handleYes = () => {
-        console.log("handleYes");
+        //get current location
+        const currLocationArr = window.location.href.split('/');
+        const noHTML = currLocationArr.pop();
+        const newLocation = currLocationArr.join('/') + "/about.html";
+            //replace index.html with about.html
+            //send user to new window location
+        setTimeout(() => {
+            window.location = newLocation
+        }, 5000)
     }
     
     const handleNo = () => {
         console.log("handleNo");
     }
 
-//when user clicks yes or no button, call handleMatch
-//If no button, change card to new values
-    //Switch image, Name, Title, etc.
-//if yes, show "It's a match alert"
-    //take user to portfolio page
+    //when user clicks yes or no button, call handleMatch
+    //If no button, change card to new values
+        //Switch image, Name, Title, etc.
+    //if yes, show "It's a match modal"
+        //take user to portfolio page
 
 
-$(".yes").on("click", handleYes);
-$(".no").on("click", handleNo);
+    // CLICK LISTENERS
+    // ========================================================================
+    $(".yes").on("click", handleYes);
+    $(".no").on("click", handleNo);
 
 });
