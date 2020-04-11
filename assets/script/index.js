@@ -1,20 +1,22 @@
-$(document).ready(function(){
-    
+$(document).ready(() => {
+
     // CLICK HANDLERS
     // ========================================================================
-    const handleYes = () => {
+    const handleYes = function(){
         //get current location
         const currLocationArr = window.location.href.split('/');
         const noHTML = currLocationArr.pop();
         const newLocation = currLocationArr.join('/') + "/about.html";
             //replace index.html with about.html
             //send user to new window location
-        setTimeout(() => {
-            window.location = newLocation
-        }, 5000)
+
+        //TODO DONT FORGET TO UNCOMMENT TIMER WHEN DEPLOYING
+        // setTimeout(() => {
+        //     window.location = newLocation
+        // }, 5000)
     }
     
-    const handleNo = () => {
+    const handleNo = function(){
         console.log("handleNo");
     }
 
