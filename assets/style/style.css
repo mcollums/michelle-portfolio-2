@@ -65,6 +65,13 @@ body {
   padding: 15px;
 }
 
+#match-modal {
+  margin-top: 20vh;
+}
+#match-modal button {
+  border-radius: 20px;
+}
+
 footer {
   width: 100vw;
   background-color: #efefef;
