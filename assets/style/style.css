@@ -1,3 +1,73 @@
-.test {
-  color: red;
+@import url("https://fonts.googleapis.com/css2?family=Arapey:ital@0;1&family=Barlow:wght@200;300;400;500&display=swap");
+body {
+  background-color: #f6f7fa;
 }
+
+.navbar {
+  background-color: #f6f7fa;
+}
+.navbar .navbar-brand {
+  margin-left: 10px;
+}
+.navbar button {
+  border-style: none;
+}
+.navbar .nav-item {
+  margin-right: 30px;
+}
+.navbar .nav-item .nav-link {
+  font-size: 20px;
+  font-family: "Barlow", sans-serif;
+}
+
+.profile-section {
+  position: relative;
+  height: 100vh;
+  background-color: #f6f7fa;
+}
+.profile-section .profile-img {
+  width: 90vw;
+  height: 500px;
+  overflow: hidden;
+  border-radius: 10px;
+  z-index: 1;
+}
+.profile-section .profile-img .profile-overlay {
+  position: absolute;
+  margin-left: 10%;
+  width: 80%;
+  bottom: 0%;
+  z-index: 2;
+}
+.profile-section .profile-img .profile-overlay .wrapper {
+  background-color: #efefef;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 10px;
+}
+.profile-section .profile-img .profile-overlay .wrapper > * {
+  padding: 0 0 0 0;
+  margin-bottom: 0px;
+}
+.profile-section .profile-buttons {
+  padding-top: 40px;
+}
+.profile-section .profile-buttons .btn {
+  border-radius: 50%;
+  background-color: #efefef;
+  color: #41b441;
+}
+.profile-section .profile-buttons .btn .no {
+  color: #bd1b1b;
+}
+.profile-section .profile-buttons .btn span {
+  font-size: 40pt;
+  padding: 15px;
+}
+
+footer {
+  width: 100vw;
+  background-color: #efefef;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,3 +1,96 @@
-.test {
-    color: red;
+@import './variables.scss';
+
+body {
+    background-color: $off-white;
 }
+
+// NavBar Style
+.navbar {
+    background-color: $off-white;
+
+    .navbar-brand {
+        margin-left: 10px;
+    }
+
+    button {
+        border-style: none;
+    }
+    
+    .nav-item{ 
+        margin-right: 30px;
+    
+        .nav-link {
+            font-size: 20px;
+            font-family: $font-sans;
+        }
+    }
+}
+
+
+// Profile Section
+.profile-section {
+    position: relative;
+    height: 100vh;
+    background-color: $off-white;
+
+    // Profile Card and Overlay
+    .profile-img {
+        width: 90vw;
+        height: 500px;
+        overflow: hidden;
+        border-radius: 10px;
+        z-index: 1;
+
+        .profile-overlay {
+            position: absolute;
+            margin-left: 10%;
+            width: 80%;
+            bottom: 0%;
+            z-index: 2;
+    
+            .wrapper {
+                background-color: $light-grey;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                padding: 10px;
+
+                > * {
+                    padding: 0 0 0 0;
+                    margin-bottom: 0px;
+                }
+
+            }
+        }
+    }    
+
+    // Buttons underneath profile picture
+    .profile-buttons {
+        padding-top: 40px;
+
+        .btn {
+            border-radius: 50%;
+            background-color: $light-grey;
+            color: rgb(65, 180, 65);
+
+            .no {
+                color: rgb(189, 27, 27);
+            }
+
+            span {
+                font-size: 40pt;
+                padding: 15px;
+            }
+        }
+
+      
+    }
+
+}
+
+
+
+footer {
+    width: 100vw;
+    background-color: $light-grey;
+}
+
