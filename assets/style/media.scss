@@ -1,0 +1,42 @@
+@media only screen and (max-width: 400px){
+    body {
+        font-size: 20px;
+    }
+    
+    .profile-section {
+        .profile-img {
+            .profile-overlay {
+                bottom: 6%;
+            }
+        }
+
+        .profile-buttons {
+            padding-top: 20px;
+
+            div {
+                margin: 0 40px 0 20px;
+                .btn {
+                    span {
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: 375px){
+    //Fixing position issues on smaller dvices
+    .profile-overlay {
+        bottom: 6%;
+    }
+
+}
+
+@media only screen and (max-width: 360px){
+    //Fixing position issues on smaller devices
+    .profile-overlay {
+        bottom: 10%;
+    }
+}

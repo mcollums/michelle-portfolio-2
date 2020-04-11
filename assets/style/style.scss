@@ -27,11 +27,13 @@ body {
 }
 
 
-.profile-card {
+// Profile Section
+.profile-section {
     position: relative;
     height: 100vh;
     background-color: $off-white;
 
+    // Profile Card and Overlay
     .profile-img {
         width: 90vw;
         height: 500px;
@@ -41,7 +43,7 @@ body {
 
         .profile-overlay {
             position: absolute;
-            margin-left: 30px;
+            margin-left: 10%;
             width: 80%;
             bottom: 0%;
             z-index: 2;
@@ -52,8 +54,6 @@ body {
                 border-top-right-radius: 10px;
                 padding: 10px;
 
-
-
                 > * {
                     padding: 0 0 0 0;
                     margin-bottom: 0px;
@@ -63,7 +63,27 @@ body {
         }
     }    
 
- 
+    // Buttons underneath profile picture
+    .profile-buttons {
+        padding-top: 40px;
+
+        .btn {
+            border-radius: 50%;
+            background-color: $light-grey;
+            color: rgb(65, 180, 65);
+
+            .no {
+                color: rgb(189, 27, 27);
+            }
+
+            span {
+                font-size: 40pt;
+                padding: 15px;
+            }
+        }
+
+      
+    }
 
 }
 
@@ -74,40 +94,3 @@ footer {
     background-color: $light-grey;
 }
 
-@media only screen and (max-width: 400px){
-    body {
-        font-size: 20px;
-    }
-
-    .navbar-brand {
-        margin-left: 38%;
-    }
-
-    .profile-card {
-        .profile-img {
-            .profile-overlay {
-                bottom: 10%;
-            }
-        }
-    }
-
-}
-
-@media only screen and (max-width: 375px){
-    body {
-        font-size: 20px;
-    }
-
-    .navbar-brand {
-        margin-left: 36%;
-    }
-
-    .profile-card {
-        .profile-img {
-            .profile-overlay {
-                bottom: 6%;
-            }
-        }
-    }
-
-}

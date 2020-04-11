@@ -20,66 +20,54 @@ body {
   font-family: "Barlow", sans-serif;
 }
 
-.profile-card {
+.profile-section {
   position: relative;
   height: 100vh;
   background-color: #f6f7fa;
 }
-.profile-card .profile-img {
+.profile-section .profile-img {
   width: 90vw;
   height: 500px;
   overflow: hidden;
   border-radius: 10px;
   z-index: 1;
 }
-.profile-card .profile-img .profile-overlay {
+.profile-section .profile-img .profile-overlay {
   position: absolute;
-  margin-left: 30px;
+  margin-left: 10%;
   width: 80%;
   bottom: 0%;
   z-index: 2;
 }
-.profile-card .profile-img .profile-overlay .wrapper {
+.profile-section .profile-img .profile-overlay .wrapper {
   background-color: #efefef;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   padding: 10px;
 }
-.profile-card .profile-img .profile-overlay .wrapper > * {
+.profile-section .profile-img .profile-overlay .wrapper > * {
   padding: 0 0 0 0;
   margin-bottom: 0px;
+}
+.profile-section .profile-buttons {
+  padding-top: 40px;
+}
+.profile-section .profile-buttons .btn {
+  border-radius: 50%;
+  background-color: #efefef;
+  color: #41b441;
+}
+.profile-section .profile-buttons .btn .no {
+  color: #bd1b1b;
+}
+.profile-section .profile-buttons .btn span {
+  font-size: 40pt;
+  padding: 15px;
 }
 
 footer {
   width: 100vw;
   background-color: #efefef;
-}
-
-@media only screen and (max-width: 400px) {
-  body {
-    font-size: 20px;
-  }
-
-  .navbar-brand {
-    margin-left: 38%;
-  }
-
-  .profile-card .profile-img .profile-overlay {
-    bottom: 10%;
-  }
-}
-@media only screen and (max-width: 375px) {
-  body {
-    font-size: 20px;
-  }
-
-  .navbar-brand {
-    margin-left: 36%;
-  }
-
-  .profile-card .profile-img .profile-overlay {
-    bottom: 6%;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */
