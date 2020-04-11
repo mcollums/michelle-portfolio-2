@@ -6,6 +6,9 @@ body {
 .navbar {
   background-color: #f6f7fa;
 }
+.navbar .navbar-brand {
+  margin-left: 10px;
+}
 .navbar button {
   border-style: none;
 }
@@ -18,21 +21,64 @@ body {
 }
 
 .profile-card {
+  position: relative;
+  height: 100vh;
   background-color: #f6f7fa;
 }
 .profile-card .profile-img {
-  background-color: red;
   width: 90vw;
   height: 500px;
   overflow: hidden;
+  border-radius: 10px;
+  z-index: 1;
 }
+.profile-card .profile-img .profile-overlay {
+  position: absolute;
+  margin-left: 30px;
+  width: 80%;
+  bottom: 0%;
+  z-index: 2;
+}
+.profile-card .profile-img .profile-overlay .wrapper {
+  background-color: #efefef;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 10px;
+}
+.profile-card .profile-img .profile-overlay .wrapper > * {
+  padding: 0 0 0 0;
+  margin-bottom: 0px;
+}
+
 footer {
+  width: 100vw;
   background-color: #efefef;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 400px) {
   body {
     font-size: 20px;
+  }
+
+  .navbar-brand {
+    margin-left: 38%;
+  }
+
+  .profile-card .profile-img .profile-overlay {
+    bottom: 10%;
+  }
+}
+@media only screen and (max-width: 375px) {
+  body {
+    font-size: 20px;
+  }
+
+  .navbar-brand {
+    margin-left: 36%;
+  }
+
+  .profile-card .profile-img .profile-overlay {
+    bottom: 6%;
   }
 }
 
