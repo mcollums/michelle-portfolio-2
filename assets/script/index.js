@@ -11,9 +11,9 @@ $(document).ready(() => {
             //send user to new window location
 
         //TODO DONT FORGET TO UNCOMMENT TIMER WHEN DEPLOYING
-        // setTimeout(() => {
-        //     window.location = newLocation
-        // }, 5000)
+        setTimeout(() => {
+            window.location = newLocation
+        }, 5000);
     }
     
     const handleNo = function(){
