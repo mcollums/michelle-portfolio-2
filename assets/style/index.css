@@ -1,29 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Arapey:ital@0;1&family=Barlow:wght@200;300;400;500&display=swap");
-body {
-  background-color: #f6f7fa;
-}
-
-.navbar {
-  background-color: #f6f7fa;
-}
-.navbar .navbar-brand {
-  margin-left: 10px;
-}
-.navbar button {
-  border-style: none;
-}
-.navbar .nav-item {
-  margin-right: 30px;
-}
-.navbar .nav-item .nav-link {
-  font-size: 20px;
-  font-family: "Barlow", sans-serif;
-}
-
 .profile-section {
   position: relative;
   height: 100vh;
   background-color: #f6f7fa;
+  padding-bottom: 100px;
 }
 .profile-section .profile-img {
   width: 90vw;
@@ -72,9 +52,4 @@ body {
   border-radius: 20px;
 }
 
-footer {
-  width: 100vw;
-  background-color: #efefef;
-}
-
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=index.css.map */
