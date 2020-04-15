@@ -5,15 +5,16 @@ $(document).ready(() => {
     const handleYes = function(){
         //get current location
         const currLocationArr = window.location.href.split('/');
+        //removes index.html from end of array
         const noHTML = currLocationArr.pop();
+        //creates new string with abouthtml at the end
         const newLocation = currLocationArr.join('/') + "/about.html";
-            //replace index.html with about.html
-            //send user to new window location
 
+        // sends user to new page after a few seconds
         //TODO DONT FORGET TO UNCOMMENT TIMER WHEN DEPLOYING
         setTimeout(() => {
             window.location = newLocation
-        }, 5000);
+        }, 50);
     }
     
     const handleNo = function(){

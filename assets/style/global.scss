@@ -1,0 +1,43 @@
+@import './variables.scss';
+
+// Global styles that all html files need
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    background-color: $off-white;
+    margin-bottom: 60px;
+}
+
+.navbar {
+    background-color: $off-white;
+    position: relative;
+
+
+    .navbar-brand {
+        margin-left: 10px;
+    }
+
+    button {
+        border-style: none;
+    }
+    
+    .nav-item{ 
+        margin-right: 30px;
+    
+        .nav-link {
+            font-size: 20px;
+            font-family: $font-sans;
+        }
+    }
+}
+
+footer {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    background-color: $light-grey;
+}

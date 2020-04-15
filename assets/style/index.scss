@@ -1,37 +1,13 @@
 @import './variables.scss';
 
-body {
-    background-color: $off-white;
-}
-
-// NavBar Style
-.navbar {
-    background-color: $off-white;
-
-    .navbar-brand {
-        margin-left: 10px;
-    }
-
-    button {
-        border-style: none;
-    }
-    
-    .nav-item{ 
-        margin-right: 30px;
-    
-        .nav-link {
-            font-size: 20px;
-            font-family: $font-sans;
-        }
-    }
-}
-
+// Styles for the index.html page
 
 // Profile Section
 .profile-section {
     position: relative;
     height: 100vh;
     background-color: $off-white;
+    padding-bottom: 100px;
 
     // Profile Card and Overlay
     .profile-img {
@@ -58,7 +34,6 @@ body {
                     padding: 0 0 0 0;
                     margin-bottom: 0px;
                 }
-
             }
         }
     }    
@@ -81,10 +56,7 @@ body {
                 padding: 15px;
             }
         }
-
-      
     }
-
 }
 
 #match-modal {
@@ -93,11 +65,5 @@ body {
     button {
         border-radius: 20px;
     }
-}
-
-
-footer {
-    width: 100vw;
-    background-color: $light-grey;
 }
 
