@@ -1,0 +1,22 @@
+@import './variables.scss';
+
+.profile-container {
+    #img-section {
+        font-family: $font-serif;
+        text-align: center;
+    }
+    .img-fluid {
+        background-color: $grey;
+        border-radius: 50%;
+        padding: 5px;
+    }
+}
+
+@media only screen and (max-width: 575px){
+    .profile-container {
+        #blurb-section {
+            padding-top: 10px;
+            text-align: center;
+        }
+    }
+}
