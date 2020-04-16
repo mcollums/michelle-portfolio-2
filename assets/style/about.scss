@@ -1,10 +1,26 @@
 @import './variables.scss';
 
-.profile-container {
-    #img-section {
-        font-family: $font-serif;
-        text-align: center;
+.title-row {
+    .name {
+        font-family: $font-serif; 
     }
+    hr {
+        margin-top: .5rem;
+        margin-bottom: .5rem;
+    }
+    //bringing down sub-title to title's level
+    .sub-title {
+        margin-left: 10px;
+        margin-top: 7px;
+    }
+    //float left on these two so they are side-by-side
+    .title , .sub-title {
+        margin-bottom: 0;
+        float: left;
+    }
+}
+
+.about-row {
     .img-fluid {
         background-color: $grey;
         border-radius: 50%;
@@ -13,8 +29,15 @@
 }
 
 @media only screen and (max-width: 575px){
-    .profile-container {
-        #blurb-section {
+    .title-row {
+        text-align: center;
+        .title , .sub-title {
+            float: none;
+        }
+    }
+
+    .about-row {
+        .blurb {
             padding-top: 10px;
             text-align: center;
         }

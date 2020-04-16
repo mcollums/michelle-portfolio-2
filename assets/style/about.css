@@ -1,16 +1,35 @@
 @import url("https://fonts.googleapis.com/css2?family=Arapey:ital@0;1&family=Barlow:wght@200;300;400;500&display=swap");
-.profile-container #img-section {
+.title-row .name {
   font-family: "Arapey", serif;
-  text-align: center;
 }
-.profile-container .img-fluid {
+.title-row hr {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.title-row .sub-title {
+  margin-left: 10px;
+  margin-top: 7px;
+}
+.title-row .title, .title-row .sub-title {
+  margin-bottom: 0;
+  float: left;
+}
+
+.about-row .img-fluid {
   background-color: #d4d4d4;
   border-radius: 50%;
   padding: 5px;
 }
 
 @media only screen and (max-width: 575px) {
-  .profile-container #blurb-section {
+  .title-row {
+    text-align: center;
+  }
+  .title-row .title, .title-row .sub-title {
+    float: none;
+  }
+
+  .about-row .blurb {
     padding-top: 10px;
     text-align: center;
   }

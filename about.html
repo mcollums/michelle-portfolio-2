@@ -21,12 +21,12 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand" href="./index.html">DevMatch</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav"
             aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarColor01">
+        <div class="collapse navbar-collapse" id="main-nav">
             <ul class="navbar-nav ml-auto d-flex justify-content-around">
                 <li class="nav-item active">
                     <a class="nav-link" href="./about.html">About.<span class="sr-only">(current)</span></a>
@@ -41,15 +41,32 @@
         </div>
     </nav>
 
-    <section class="profile-container my-4 py-5">
-        <div class="row">
-            <div class="col-lg-3 col-md-3 col-sm-1 col-3"></div>
-            <div id="img-section" class="col-lg-2 col-md-3 col-sm-4 col-6 px-4">
-                <img class="img-fluid" src="./assets/images/mc-sm.png" alt="user's profile image">
-                <h3><strong>Michelle Austin</strong></h3>
+    <!-- Section containing heading and about blurb -->
+    <section class="about-container my-4 py-5">
+
+        <!-- Heading Row -->
+        <div class="title-row row pb-4">
+            <!-- Setting offset columns -->
+            <div class="offset-lg-3 offset-md-2 offset-sm-1 offset-1"></div>
+            <!-- Heading column -->
+            <div class="col-lg-6 col-md-8 col-sm-10 col-10">           
+                <h1 class="name">Michelle Collums</h1>
+                <hr>
+                <h4 class="title">Full-Stack Web Developer</h4>
+                <h6 class="sub-title">(and cat parent)</h6>
             </div>
-            <div id="blurb-section" class="col-lg-4 col-md-4 col-sm-6 px-5">
-                <h4>Full-Stack Web Developer and Cat Parent</h4>
+        </div>
+
+        <!-- About Me Row -->
+        <div class="about-row row">
+            <!-- Offset column-->
+            <div class="offset-lg-3 offset-md-2 offset-sm-1 offset-3"></div>
+            <!-- About me columns -->
+            <div class="px-4 col-lg-2 col-md-3 col-sm-4 col-6">
+                <img class="img-fluid" src="./assets/images/mc-sm.png" alt="user's profile image">
+            </div>
+            <div class="blurb px-5 col-lg-4 col-md-5 col-sm-6">
+                <h4>About me</h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi maiores molestias debitis illum ea? Explicabo dolore eos sint sed minima unde maxime corporis, atque mollitia. Distinctio pariatur beatae quia ipsa.
                 Asperiores aspernatur maiores enim ipsa unde facere debitis tempore totam. Inventore illum architecto vel doloremque! Accusamus, aperiam ipsum! Dicta itaque at, nam dignissimos dolor explicabo assumenda molestias dolorum ex ut?
                 Animi reprehenderit velit magnam dolorum, labore deleniti eos quae architecto, aliquam quisquam aut perspiciatis modi nam quo praesentium magni expedita tempora eum? Voluptas facere minus nostrum consequatur rem distinctio esse!
@@ -57,6 +74,13 @@
             </div>
         </div>
     </section>
+
+    <section class="skills-container my-4 my-5">
+        <div class="row main-skill-row ">
+
+        </div>
+    </section>
+
 
     <!-- Footer -->
     <footer class="pt-4">
