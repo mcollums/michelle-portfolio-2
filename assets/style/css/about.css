@@ -34,20 +34,17 @@
     width: 90%;
     background-color: #f6f7fa;
     opacity: .3; }
-  .skills-container .row {
-    width: 70%;
+  .skills-container .tech-row {
     background-color: #451f49;
-    margin: 1rem 2rem 2rem 16rem;
     padding: 1.5rem 1.5rem;
     border-radius: 10px; }
-    .skills-container .row h2 {
-      font-size: calc(1.3rem + 0.6vw);
-      margin-top: 2.7rem; }
+    .skills-container .tech-row .title h2 {
+      font-size: calc(1.3rem + 0.6vw); }
       @media (min-width: 1200px) {
-        .skills-container .row h2 {
+        .skills-container .tech-row .title h2 {
           font-size: 1.75rem; } }
-    .skills-container .row .card {
-      margin: 1rem 3rem 0rem 3rem;
+    .skills-container .tech-row .card {
+      margin: 1% 10% 0% 0%;
       width: 10%;
       min-width: 70.52px;
       float: left;

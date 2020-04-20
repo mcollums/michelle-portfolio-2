@@ -33,7 +33,7 @@
     background-color: $dark-main;
     color: $off-white;
     h1 {
-        @include rfs(50px);
+        @include rfs(50px); // responsive font size mixin
         font-family: $font-serif;
     }
 
@@ -45,18 +45,17 @@
         opacity: .3;
     }
 
-    .row {
-        width: 70%;
+    .tech-row {
         background-color: #451f49;
-        margin: 1rem 2rem 2rem 16rem;
         padding: 1.5rem 1.5rem;
         border-radius: 10px;
-        h2 {
-            @include rfs(28px);
-            margin-top: 2.7rem;
+        .title {
+            h2 {
+                @include rfs(28px); // responsive font size mixin
+            }
         }
         .card {
-            margin: 1rem 3rem 0rem 3rem;
+            margin: 1% 10% 0% 0%;
             width: 10%; 
             min-width: 70.52px;
 
