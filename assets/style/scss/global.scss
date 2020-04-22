@@ -4,11 +4,11 @@
 
 html {
     position: relative;
-    width: 100vw;
-    min-height: 100%;
+    scroll-behavior: smooth;
 }
 
 body {
+    overflow-x: hidden;
     font-family: $font-sans;
     background-color: $off-white;
     margin-bottom: 400px;
