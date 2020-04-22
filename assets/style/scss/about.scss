@@ -3,6 +3,8 @@
 
 //about and title container style
 .title-row {
+    // text-align: center;
+
     .name {
         font-family: $font-serif; 
     }
@@ -39,7 +41,7 @@
     hr {
         margin-top: 0;
         margin-bottom: 1.5rem;
-        width: 80%;
+        width: 100%;
         background-color: $med-grey;
         opacity: .3;
     }
@@ -98,7 +100,7 @@
     hr {
         margin-top: 0;
         margin-bottom: 1.5rem;
-        width: 90%;
+        width: 100%;
         background-color: $off-white;
         opacity: .3;
     }

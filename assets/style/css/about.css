@@ -30,7 +30,7 @@
   .portfolio-container hr {
     margin-top: 0;
     margin-bottom: 1.5rem;
-    width: 80%;
+    width: 100%;
     background-color: #a1a1a1;
     opacity: .3; }
   .portfolio-container .card {
@@ -75,7 +75,7 @@
   .skills-container hr {
     margin-top: 0;
     margin-bottom: 1.5rem;
-    width: 90%;
+    width: 100%;
     background-color: #f6f7fa;
     opacity: .3; }
   .skills-container .tech-row {
