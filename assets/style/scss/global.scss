@@ -4,18 +4,19 @@
 
 html {
     position: relative;
-    min-height: 100%;
+    scroll-behavior: smooth;
 }
 
 body {
+    overflow-x: hidden;
+    font-family: $font-sans;
     background-color: $off-white;
-    margin-bottom: 60px;
+    margin-bottom: 400px;
 }
 
 .navbar {
     background-color: $off-white;
     position: relative;
-
 
     .navbar-brand {
         margin-left: 10px;
@@ -29,8 +30,7 @@ body {
         margin-right: 30px;
     
         .nav-link {
-            font-size: 20px;
-            font-family: $font-sans;
+            font-size: 18px;
         }
     }
 }

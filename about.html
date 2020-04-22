@@ -10,9 +10,9 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" text="text/css" href="assets/style/bootstrap.min.css">
-    <link rel="stylesheet" text="text/css" href="assets/style/global.css">
-    <link rel="stylesheet" text="text/css" href="assets/style/about.css">
-    <link rel="stylesheet" text="text/css" href="assets/style/media.css">
+    <link rel="stylesheet" text="text/css" href="assets/style/css/global.css">
+    <link rel="stylesheet" text="text/css" href="assets/style/css/about.css">
+    <link rel="stylesheet" text="text/css" href="assets/style/css/media.css">
 
     <title>Collums | About</title>
 
@@ -21,41 +21,316 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand" href="./index.html">DevMatch</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav"
             aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarColor01">
+        <div class="collapse navbar-collapse" id="main-nav">
             <ul class="navbar-nav ml-auto d-flex justify-content-around">
                 <li class="nav-item active">
-                    <a class="nav-link" href="./about.html">About.<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#about">About.<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="./portfolio.html">Projects.</a>
+                    <a class="nav-link" href="#portfolio">Projects.</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="./contact.html">Contact.</a>
+                    <a class="nav-link" href="#contact">Contact.</a>
                 </li>
             </ul>
         </div>
     </nav>
 
-    <section class="profile-container my-4 py-5">
-        <div class="row">
-            <div class="col-lg-3 col-md-3 col-sm-1 col-3"></div>
-            <div id="img-section" class="col-lg-2 col-md-3 col-sm-4 col-6 px-4">
-                <img class="img-fluid" src="./assets/images/mc-sm.png" alt="user's profile image">
-                <h3><strong>Michelle Austin</strong></h3>
-            </div>
-            <div id="blurb-section" class="col-lg-4 col-md-4 col-sm-6 px-5">
-                <h4>Full-Stack Web Developer and Cat Parent</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi maiores molestias debitis illum ea? Explicabo dolore eos sint sed minima unde maxime corporis, atque mollitia. Distinctio pariatur beatae quia ipsa.
-                Asperiores aspernatur maiores enim ipsa unde facere debitis tempore totam. Inventore illum architecto vel doloremque! Accusamus, aperiam ipsum! Dicta itaque at, nam dignissimos dolor explicabo assumenda molestias dolorum ex ut?
-                Animi reprehenderit velit magnam dolorum, labore deleniti eos quae architecto, aliquam quisquam aut perspiciatis modi nam quo praesentium magni expedita tempora eum? Voluptas facere minus nostrum consequatur rem distinctio esse!
-                Asperiores odio fugiat illum consequatur ratione sequi in enim placeat commodi pariatur maiores nihil labore, aut culpa accusantium voluptatem impedit suscipit, iusto perferendis! Sequi, eius reiciendis aut in quia perspiciatis?
+    <!-- Start about me section -->
+    <!-- ======================================================================================================= -->
+    <!-- ======================================================================================================= -->
+    <section id="about" class="about-container container-fluid px-0 mx-0 my-4 py-5">
+        <!-- Heading Row -->
+        <div class="title-row row pb-4">
+            <!-- Setting offset columns -->
+            <div class="col-lg-3 col-md-2 col-sm-1 col-1"></div>
+            <!-- Heading column -->
+            <div class="col-lg-6 col-md-8 col-sm-10 col-10">
+                <h1 class="name">Michelle Collums</h1>
+                <hr>
+                <h4 class="title">Full-Stack Web Developer</h4>
+                <h6 class="sub-title">(and cat parent)</h6>
             </div>
         </div>
+
+        <!-- About Me Row -->
+        <div class="about-row row">
+            <!-- Offset column-->
+            <div class="offset-lg-3 offset-md-2 offset-sm-1 offset-3"></div>
+            <!-- About me columns -->
+            <div class="px-4 col-lg-2 col-md-3 col-sm-4 col-6">
+                <img class="img-fluid" src="./assets/images/mc-sm.png" alt="user's profile image">
+            </div>
+            <div class="blurb px-5 col-lg-4 col-md-5 col-sm-6">
+                <h4>About me</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi maiores molestias debitis illum ea?
+                    Explicabo dolore eos sint sed minima unde maxime corporis, atque mollitia. Distinctio pariatur
+                    beatae quia ipsa.
+                    Asperiores aspernatur maiores enim ipsa unde facere debitis tempore totam. Inventore illum
+                    architecto vel doloremque! Accusamus, aperiam ipsum! Dicta itaque at, nam dignissimos dolor
+                    explicabo assumenda molestias dolorum ex ut?
+                    Animi reprehenderit velit magnam dolorum, labore deleniti eos quae architecto, aliquam quisquam aut
+                    perspiciatis modi nam quo praesentium magni expedita tempora eum? Voluptas facere minus nostrum
+                    consequatur rem distinctio esse!
+            </div>
+        </div>
+    </section>
+
+    <!-- Start Portfolio Section -->
+    <!-- ======================================================================================================= -->
+    <!-- ======================================================================================================= -->
+    <section id="portfolio" class="portfolio-container container-fluid px-0 mx-0 mb-5">
+        <h1 class="text-center pt-4">Projects</h1>
+        <hr>
+        <div class="row px-5">
+
+            <!-- Trivia War Card -->
+            <article class="col-xl-4 col-lg-4 col-md-6 col-sm-6 mb-4">
+                <div class="card">
+                    <img class="card-img-top" src="./assets/images/trivia-war.png" alt="Screenshot of a webpage">
+                    <div class="card-body">
+                        <div class="row">
+                            <!-- Shown info div -->
+                            <div class="col-10">
+                                <h5 class="card-title mb-0"><strong>Trivia War</strong></h5>
+                                <p>Multiplayer Trivia App</p>
+                            </div>
+                            <div class="col-2">
+                                <a class="ellipses" data-toggle="collapse" href="#more-info-01" role="button"
+                                    aria-expanded="false" aria-controls="more-info"><i
+                                        class="fas fa-ellipsis-v"></i></a>
+                            </div>
+                            <!-- Hidden info div -->
+                            <div id="more-info-01" class="collapse">
+                                <div class="card-body">
+                                    <ul>
+                                        <li>Achieved the goal of building a real-time application with a MongoDB
+                                            database.</li>
+                                        <li>Delivered game logic, API routes, and multiplayer experience.</li>
+                                        <li>Currently making the code DRY and rebuilding the front end.</li>
+                                    </ul>
+                                    <p class="card-text"><strong>JavaScript, React.js, Node.js, MongoDB, Socket.io,
+                                            JSX/CSS</strong></p>
+                                </div>
+                                <div class="row pl-4">
+                                    <div class="col-12">
+                                        <a href="https://github.com/mcollums/Trivia-War-App" target="_blank"
+                                            class="card-link pr-2" style="font-size:2.2rem;"><i
+                                                class="fab fa-github"></i></a>
+                                        <a href="https://bit.ly/2Th8ype" target="_blank" class="card-link pl-2"
+                                            style="font-size:2rem;"><i class="fas fa-external-link-alt"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Rotten Tomatoes Card -->
+            <article class="col-xl-4 col-lg-4 col-md-6 col-sm-6 mb-4">
+                <div class="card">
+                    <img class="card-img-top" src="./assets/images/rotten-tomatoes.png" alt="Screenshot of a webpage">
+                    <div class="card-body">
+                        <div class="row d-flex justify-content-around">
+                            <!-- Shown info div -->
+                            <div class="col-10">
+                                <h5 class="card-title mb-0"><strong>Rotten Tomatoes Scraper</strong></h5>
+                                <p>Full-Stack Web Scraper</p>
+                            </div>
+                            <div class="col-2">
+                                <a class="ellipses" data-toggle="collapse" href="#more-info-02" role="button"
+                                    aria-expanded="false" aria-controls="more-info"><i
+                                        class="fas fa-ellipsis-v"></i></a>
+                            </div>
+                            <!-- Hidden info div -->
+                            <div id="more-info-02" class="collapse">
+                                <div class="card-body">
+                                    <ul>
+                                        <li>Full-Stack app to scrape Rotten Tomatoes for articles, add favorites and
+                                            notes.</li>
+                                        <li>Produced jQuery, Handlebars.js, Axios and Bootstrap front end, API routes,
+                                            and MongoDB schemas.</li>
+                                        <li>Gained experience with web scraping and building full-stack applications.
+                                        </li>
+                                    </ul>
+                                    <p class="card-text"><strong>JavaScript, jQuery, Node.js, MongoDB, Bootstrap, Axios,
+                                            Handlebars.js, HTML/CSS</strong></p>
+                                </div>
+                                <div class="row pl-4">
+                                    <div class="col-12">
+                                        <a href="https://github.com/mcollums/News-Scraper" target="_blank"
+                                            class="card-link pr-2" style="font-size:2.2rem;"><i
+                                                class="fab fa-github"></i></a>
+                                        <a href="https://bit.ly/2VvOtNk" target="_blank" class="card-link pl-2"
+                                            style="font-size:2rem;"><i class="fas fa-external-link-alt"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Cater2Me Card -->
+            <article class="col-xl-4 col-lg-4 col-md-6 col-sm-6 mb-4">
+                <div class="card">
+                    <img class="card-img-top" src="./assets/images/cater2me.png" alt="Screenshot of a webpage">
+                    <div class="card-body">
+                        <div class="row">
+                            <!-- Shown info div -->
+                            <div class="col-10">
+                                <h5 class="card-title mb-0"><strong>Cater2Me</strong></h5>
+                                <p>Full-Stack Catering Platform</p>
+                            </div>
+                            <div class="col-2">
+                                <a class="ellipses" data-toggle="collapse" href="#more-info-03" role="button"
+                                    aria-expanded="false" aria-controls="more-info"><i
+                                        class="fas fa-ellipsis-v"></i></a>
+                            </div>
+                            <!-- Hidden info div -->
+                            <div id="more-info-03" class="collapse">
+                                <div class="card-body">
+                                    <ul>
+                                        <li>Collaborated with a team to build develop an app for catering vendors and
+                                            customers to connect. </li>
+                                        <li>Gained experience with git version control, Agile development, MVC
+                                            architecture, and MySQL databases.</li>
+                                        <li>Utilized HTML, CSS, Bootstrap, and Handlebars.js to deliver the front end,
+                                            constructed API Routes with Node.js and created MySQL Schemas. </li>
+                                    </ul>
+                                    <p class="card-text"><strong>JavaScript, jQuery, Node.js, MySQL, Bootstrap, Axios,
+                                            Handlebars.js, HTML/CSS</strong></p>
+                                </div>
+                                <div class="row pl-4">
+                                    <div class="col-12">
+                                        <a href="https://github.com/mcollums/Cater2Me" target="_blank"
+                                            class="card-link pr-2" style="font-size:2.2rem;"><i
+                                                class="fab fa-github"></i></a>
+                                        <a href="https://bit.ly/2ToxPwm" target="_blank" class="card-link pl-2"
+                                            style="font-size:2rem;"><i class="fas fa-external-link-alt"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+    </section>
+
+    <!-- Start Skills Section -->
+    <!-- ======================================================================================================= -->
+    <!-- ======================================================================================================= -->
+    <section id="skills" class="skills-container container-fluid">
+        <h1 class="text-center pt-4">Skills</h1>
+        <hr>
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8">
+
+                <!-- Front End Skills Section -->
+                <article class="tech-row row mb-5 justify-content-around">
+                    <div class="title my-auto pb-2 text-center col-lg-2 col-md-12">
+                        <h2>Front End</h2>
+                    </div>
+                    <div class="col-lg-9 col-md-12">
+                        <div class="card">
+                            <img class="card-img-top" src="./assets/images/html.png" alt="">
+                            <p class="pt-1 text-center">HTML5</p>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top" src="./assets/images/css.png" alt="">
+                            <p class="pt-1 text-center">CSS3</p>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top" src="./assets/images/bootstrap.png" alt="">
+                            <p class="pt-1 text-center">Bootstrap</p>
+                        </div>
+                        <div class="card ">
+                            <img class="card-img-top" src="./assets/images/sass.png" alt="">
+                            <p class="pt-1 text-center">Sass</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- JavaScript Skills Section -->
+                <article class="tech-row row mb-5 justify-content-around">
+                    <div class="title my-auto pb-2 text-center col-lg-2 col-md-12">
+                        <h2>JavaScript</h2>
+                    </div>
+                    <div class="col-lg-9 col-md-12">
+                        <div class="card">
+                            <img class="card-img-top" src="./assets/images/js.png" alt="">
+                            <p class="pt-1 text-center">JavaScript</p>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top" src="./assets/images/node.png" alt="">
+                            <p class="pt-1 text-center">Node.js</p>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top" src="./assets/images/react.png" alt="">
+                            <p class="pt-1 text-center">React.js</p>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top" src="./assets/images/jquery.png" alt="">
+                            <p class="pt-1 text-center">jQuery</p>
+                        </div>
+                    </div>
+                </article>
+                <!-- Backend / Testing Skills Section -->
+                <article class="tech-row row mb-5 justify-content-around">
+                    <div class="title my-auto pb-2 text-center col-lg-2 col-md-12">
+                        <h2>Back End</h2>
+                    </div>
+                    <div class="col-lg-9 col-md-12">
+                        <div class="card">
+                            <img class="card-img-top" src="./assets/images/mysql.png" alt="">
+                            <p class="pt-1 text-center">MySQL</p>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top" src="./assets/images/mongodb.png" alt="">
+                            <p class="pt-1 text-center">MongoDB</p>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top" src="./assets/images/firebase.png" alt="">
+                            <p class="pt-1 text-center">Firebase</p>
+                        </div>
+                    </div>
+                </article>
+                <!-- Other Skills Section -->
+                <article class="tech-row row mb-5 justify-content-around">
+                    <div class="title my-auto pb-2 text-center col-lg-2 col-md-12">
+                        <h2>Other</h2>
+                    </div>
+                    <div class="col-lg-9 col-md-12">
+                        <div class="card">
+                            <img class="card-img-top" src="./assets/images/github.png" alt="">
+                            <p class="pt-1 text-center">Git</p>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top" src="./assets/images/heroku.png" alt="">
+                            <p class="pt-1 text-center">Heroku</p>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top" src="./assets/images/photoshop.png" alt="">
+                            <p class="pt-1 text-center">Photoshop</p>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top" src="./assets/images/illustrator.png" alt="">
+                            <p class="pt-1 text-center">Illustrator</p>
+                        </div>
+                        <div class="card ">
+                            <img class="card-img-top" src="./assets/images/jest.png" alt="">
+                            <p class="pt-1 text-center">Jest</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
     </section>
 
     <!-- Footer -->
@@ -86,6 +361,15 @@
             </div>
 
     </footer>
+
+    <!-- JavaScript / jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

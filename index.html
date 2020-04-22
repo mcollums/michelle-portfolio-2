@@ -10,9 +10,9 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" text="text/css" href="assets/style/bootstrap.min.css">
-    <link rel="stylesheet" text="text/css" href="assets/style/global.css">
-    <link rel="stylesheet" text="text/css" href="assets/style/index.css">
-    <link rel="stylesheet" text="text/css" href="assets/style/media.css">
+    <link rel="stylesheet" text="text/css" href="assets/style/css/global.css">
+    <link rel="stylesheet" text="text/css" href="assets/style/css/index.css">
+    <link rel="stylesheet" text="text/css" href="assets/style/css/media.css">
 
     <title>Collums | Home</title>
 </head>
@@ -20,12 +20,12 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand" href="./index.html">DevMatch</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav"
             aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarColor01">
+        <div class="collapse navbar-collapse" id="main-nav">
             <ul class="navbar-nav ml-auto d-flex justify-content-around">
                 <li class="nav-item active">
                     <a class="nav-link" href="./about.html">About.<span class="sr-only">(current)</span></a>
@@ -42,25 +42,27 @@
 
     <section class="profile-section container my-4">
         <article class="row">
-            <div class="col-1 col-sm-1 col-md-2 col-lg-3"></div>
-            <div class="col-10 col-sm-10 col-md-8 col-lg-6 p-0 profile-img">
+            <!-- Offset Column-->
+            <div class="offset-lg-3 offset-md-2 offset-sm-1 offset-1"></div>
+            <!-- Profile Card Column -->
+            <div class="profile-img p-0 col-lg-6 col-md-8 col-sm-10 col-10">
                 <img src="./assets/images/mc-01.png" class="img-fluid" alt="user's profile picture">
                 <div class="profile-overlay">
                     <div class="wrapper">
-                        <h2 class="prof-name"><strong>Michelle Austin</strong></h2>
-                        <h4 class="prof-job">Web Developer</h4>
+                        <h2 class="prof-name"><strong>Michelle Collums</strong></h2>
+                        <h4 class="prof-job">Full-Stack Web Developer</h4>
                         <h5 class="prof-tagline">(and cat parent).</h5>
                     </div>
                 </div>
             </div>
         </article>
-        <div class="row justify-content-center text-center profile-buttons">
-            <div class="col-3 p-0 col-sm-3">
+        <div class="profile-buttons row justify-content-center text-center">
+            <div class="p-0 col-sm-3 col-3 ">
                 <button type="button" class="btn btn-light">
                     <span class="no fas fa-times"></span>
                 </button>
             </div>
-            <div class="col-3 p-0 col-sm-3">
+            <div class="p-0 col-sm-3 col-3">
                 <button type="button" class="btn btn-light">
                     <span class="yes far fa-heart" data-toggle="modal" data-target="#match-modal"></span>
                 </button>
