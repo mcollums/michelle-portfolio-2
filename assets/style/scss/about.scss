@@ -30,6 +30,8 @@
 
 // Portfolio Container Styling
 .portfolio-container {
+    padding: 0 6vw;
+
     h1 {
         @include rfs(45px); // responsive font size mixin
         font-family: $font-serif;
@@ -47,7 +49,7 @@
         .card-img-top {
             position: relative;
             width: 100%;
-            height: 18vw;
+            height: 12vw;
             object-fit: cover;
         }
         .card-body {
