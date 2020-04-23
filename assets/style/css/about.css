@@ -110,6 +110,10 @@
       background-color: #232b38;
       border-style: none; }
 
+@media only screen and (max-width: 992px) {
+  .portfolio-container .card .card-img-top {
+    height: 30vw; } }
+
 @media only screen and (max-width: 575px) {
   .title-row {
     text-align: center; }
