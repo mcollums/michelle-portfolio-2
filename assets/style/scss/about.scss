@@ -3,19 +3,20 @@
 
 //about and title container style
 .title-row {
-    // text-align: center;
-
     .name {
         font-family: $font-serif; 
     }
+
     hr {
         margin-top: .5rem;
         margin-bottom: .5rem;
     }
+
     .sub-title { //bringing down sub-title to title's level
         margin-left: 10px;
         margin-top: 7px;
     }
+
     .title , .sub-title { //float left on these two so they are side-by-side
         margin-bottom: 0;
         float: left;
@@ -32,12 +33,15 @@
 
 // Portfolio Container Styling
 .portfolio-container {
+    background-color: $main;
     padding: 0 6vw;
 
     h1 {
+        color: $off-white;
         @include rfs(45px); // responsive font size mixin
         font-family: $font-serif;
     }
+
     hr {
         margin-top: 0;
         margin-bottom: 1.5rem;
@@ -45,6 +49,7 @@
         background-color: $med-grey;
         opacity: .3;
     }
+
     .card {
         min-width: 14rem;
 
@@ -57,6 +62,7 @@
         .card-body {
             background-color: $light-grey;
             padding-top: .7rem;
+
             .card-title {
                 @include rfs(18px);
             }
@@ -69,6 +75,7 @@
                 position: absolute;
                 right: -5px;
                 top: -15px;
+
                 i {
                     color: $dark-main;
                     &:hover {
@@ -80,6 +87,7 @@
         .collapse {
             i {
             color: $main;
+
                 &:hover {
                     color: $accent;
                 }
@@ -92,6 +100,7 @@
 .skills-container {
     background-color: $dark-main;
     color: $off-white;
+
     h1 {
         @include rfs(50px); // responsive font size mixin
         font-family: $font-serif;
@@ -106,7 +115,7 @@
     }
 
     .tech-row {
-        background-color: #451f49;
+        background-color: #232b38;
         padding: 1.5rem 1.5rem;
         border-radius: 10px;
         .title {
@@ -118,9 +127,8 @@
             margin: 1% 10% 0% 0%;
             width: 10%; 
             min-width: 70.52px;
-
             float: left;
-            background-color: #451f49;
+            background-color: #232b38;
             border-style: none;
         }
     }
@@ -131,6 +139,7 @@
 @media only screen and (max-width: 575px){
     .title-row {
         text-align: center;
+
         .title , .sub-title {
             float: none;
         }

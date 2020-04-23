@@ -20,8 +20,10 @@
   padding: 5px; }
 
 .portfolio-container {
+  background-color: #30475e;
   padding: 0 6vw; }
   .portfolio-container h1 {
+    color: #f6f7fa;
     font-size: calc(1.40625rem + 1.875vw);
     font-family: "Arapey", serif; }
     @media (min-width: 1200px) {
@@ -41,7 +43,7 @@
       height: 12vw;
       object-fit: cover; }
     .portfolio-container .card .card-body {
-      background-color: #efefef;
+      background-color: #ececec;
       padding-top: .7rem; }
       .portfolio-container .card .card-body .card-title {
         font-size: 1.125rem; }
@@ -55,16 +57,16 @@
         right: -5px;
         top: -15px; }
         .portfolio-container .card .card-body .ellipses i {
-          color: #3e1d42; }
+          color: #1d242f; }
           .portfolio-container .card .card-body .ellipses i:hover {
-            color: #fdc938; }
+            color: #c3641b; }
     .portfolio-container .card .collapse i {
-      color: #323e9d; }
+      color: #30475e; }
       .portfolio-container .card .collapse i:hover {
-        color: #fdc938; }
+        color: #c3641b; }
 
 .skills-container {
-  background-color: #3e1d42;
+  background-color: #1d242f;
   color: #f6f7fa; }
   .skills-container h1 {
     font-size: calc(1.4375rem + 2.25vw);
@@ -79,7 +81,7 @@
     background-color: #f6f7fa;
     opacity: .3; }
   .skills-container .tech-row {
-    background-color: #451f49;
+    background-color: #232b38;
     padding: 1.5rem 1.5rem;
     border-radius: 10px; }
     .skills-container .tech-row .title h2 {
@@ -92,7 +94,7 @@
       width: 10%;
       min-width: 70.52px;
       float: left;
-      background-color: #451f49;
+      background-color: #232b38;
       border-style: none; }
 
 @media only screen and (max-width: 575px) {
