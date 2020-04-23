@@ -21,7 +21,7 @@
 
 .portfolio-container {
   background-color: #30475e;
-  padding: 0 6vw; }
+  padding: 0 16vw; }
   .portfolio-container h1 {
     color: #f6f7fa;
     font-size: calc(1.40625rem + 1.875vw);
@@ -40,7 +40,7 @@
     .portfolio-container .card .card-img-top {
       position: relative;
       width: 100%;
-      height: 12vw;
+      height: 18vw;
       object-fit: cover; }
     .portfolio-container .card .card-body {
       background-color: #ececec;
@@ -55,15 +55,28 @@
         cursor: pointer;
         position: absolute;
         right: -5px;
-        top: -15px; }
-        .portfolio-container .card .card-body .ellipses i {
-          color: #1d242f; }
-          .portfolio-container .card .card-body .ellipses i:hover {
-            color: #c3641b; }
+        top: -15px;
+        color: #1d242f; }
+        .portfolio-container .card .card-body .ellipses:hover {
+          color: #c3641b; }
     .portfolio-container .card .collapse i {
       color: #30475e; }
       .portfolio-container .card .collapse i:hover {
         color: #c3641b; }
+
+.exp-container h1 {
+  font-size: calc(1.40625rem + 1.875vw);
+  font-family: "Arapey", serif; }
+  @media (min-width: 1200px) {
+    .exp-container h1 {
+      font-size: 2.8125rem; } }
+
+.exp-container hr {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  width: 100%;
+  background-color: #a1a1a1;
+  opacity: .3; }
 
 .skills-container {
   background-color: #1d242f;

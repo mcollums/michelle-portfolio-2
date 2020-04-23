@@ -34,7 +34,7 @@
 // Portfolio Container Styling
 .portfolio-container {
     background-color: $main;
-    padding: 0 6vw;
+    padding: 0 16vw;
 
     h1 {
         color: $off-white;
@@ -56,7 +56,7 @@
         .card-img-top {
             position: relative;
             width: 100%;
-            height: 12vw;
+            height: 18vw;
             object-fit: cover;
         }
         .card-body {
@@ -75,12 +75,10 @@
                 position: absolute;
                 right: -5px;
                 top: -15px;
+                color: $dark-main;
 
-                i {
-                    color: $dark-main;
-                    &:hover {
-                        color: $accent;
-                    }
+                &:hover {
+                    color: $accent;
                 }
             }
         }
@@ -93,6 +91,21 @@
                 }
             }
         }
+    }
+}
+
+.exp-container {
+    h1 {
+        @include rfs(45px); // responsive font size mixin
+        font-family: $font-serif;
+    }
+
+    hr {
+        margin-top: 0;
+        margin-bottom: 1.5rem;
+        width: 100%;
+        background-color: $med-grey;
+        opacity: .3;
     }
 }
 
