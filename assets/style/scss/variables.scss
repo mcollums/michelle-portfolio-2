@@ -11,3 +11,20 @@ $main: #30475e;
 $dark-main: #1d242f;
 $light-accent: #f2a365;
 $accent: #c3641b;
+
+$font-dark: #12161d;
+
+//HR mixin that takes in $color-val and $opactity-val as arguements
+@mixin hr-styled($color-val, $opacity-val) {
+    background-color: $color-val;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    width: 100%;
+    opacity: $opacity-val;
+}
+
+@mixin bottom-col() {
+    float: none;
+    display: table-cell;
+    vertical-align: bottom;
+}

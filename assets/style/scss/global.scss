@@ -10,6 +10,7 @@ html {
 body {
     overflow-x: hidden;
     font-family: $font-sans;
+    color: $font-dark;
     background-color: $off-white;
     margin-bottom: 400px;
 }
@@ -33,6 +34,13 @@ body {
             font-size: 18px;
         }
     }
+}
+
+.bottom-col {
+    // display: table-cell;
+    vertical-align: bottom;
+    float: none;
+
 }
 
 footer {

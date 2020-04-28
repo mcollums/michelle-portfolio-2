@@ -1,33 +1,33 @@
 @import './variables.scss';
 @import '../../../node_modules/rfs/scss';
 
-//about and title container style
-.title-row {
-    .name {
-        font-family: $font-serif; 
+.about-container {
+    .title-row {   //about and title container style
+        .name {
+            font-family: $font-serif; 
+        }
+
+        hr {
+            @include hr-styled($med-grey, .5);
+        }
+
+        .sub-title { //bringing down sub-title to title's level
+            margin-left: 10px;
+            margin-top: 7px;
+        }
+
+        .title , .sub-title { //float left on these two so they are side-by-side
+            margin-bottom: 0;
+            float: left;
+        }
     }
 
-    hr {
-        margin-top: .5rem;
-        margin-bottom: .5rem;
-    }
-
-    .sub-title { //bringing down sub-title to title's level
-        margin-left: 10px;
-        margin-top: 7px;
-    }
-
-    .title , .sub-title { //float left on these two so they are side-by-side
-        margin-bottom: 0;
-        float: left;
-    }
-}
-
-.about-row {
-    .img-fluid {
-        background-color: $grey;
-        border-radius: 50%;
-        padding: 5px;
+    .about-row {
+        .img-fluid {
+            background-color: $grey;
+            border-radius: 50%;
+            padding: 5px;
+        }
     }
 }
 
@@ -43,11 +43,7 @@
     }
 
     hr {
-        margin-top: 0;
-        margin-bottom: 1.5rem;
-        width: 100%;
-        background-color: $med-grey;
-        opacity: .3;
+        @include hr-styled($grey, .4);
     }
 
     .card {
@@ -64,7 +60,7 @@
             padding-top: .7rem;
 
             .card-title {
-                @include rfs(18px);
+                @include rfs(22px);
             }
             .ellipses {
                 @include rfs(18px);
@@ -101,11 +97,21 @@
     }
 
     hr {
-        margin-top: 0;
-        margin-bottom: 1.5rem;
-        width: 100%;
-        background-color: $med-grey;
-        opacity: .3;
+        @include hr-styled($med-grey, .4);
+        width: 100%
+    }
+    .exp-card {
+        background-color: $light-grey;
+        border-radius: 10px;
+        .title-col {
+            .title {
+                float: left;
+            }
+            .date {
+                float: right;
+                padding-right: 15px;
+            }
+        }
     }
 }
 
@@ -120,11 +126,7 @@
     }
 
     hr {
-        margin-top: 0;
-        margin-bottom: 1.5rem;
-        width: 100%;
-        background-color: $off-white;
-        opacity: .3;
+        @include hr-styled($off-white, .3);
     }
 
     .tech-row {

@@ -6,6 +6,7 @@ html {
 body {
   overflow-x: hidden;
   font-family: "Barlow", sans-serif;
+  color: #12161d;
   background-color: #f6f7fa;
   margin-bottom: 400px; }
 
@@ -20,6 +21,10 @@ body {
     margin-right: 30px; }
     .navbar .nav-item .nav-link {
       font-size: 18px; }
+
+.bottom-col {
+  vertical-align: bottom;
+  float: none; }
 
 footer {
   position: absolute;

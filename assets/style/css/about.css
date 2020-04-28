@@ -1,20 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Arapey:ital@0;1&family=Barlow:wght@200;300;400;500&display=swap");
-.title-row .name {
+.about-container .title-row .name {
   font-family: "Arapey", serif; }
 
-.title-row hr {
-  margin-top: .5rem;
-  margin-bottom: .5rem; }
+.about-container .title-row hr {
+  background-color: #a1a1a1;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  width: 100%;
+  opacity: 0.5; }
 
-.title-row .sub-title {
+.about-container .title-row .sub-title {
   margin-left: 10px;
   margin-top: 7px; }
 
-.title-row .title, .title-row .sub-title {
+.about-container .title-row .title, .about-container .title-row .sub-title {
   margin-bottom: 0;
   float: left; }
 
-.about-row .img-fluid {
+.about-container .about-row .img-fluid {
   background-color: #d4d4d4;
   border-radius: 50%;
   padding: 5px; }
@@ -30,11 +33,11 @@
       .portfolio-container h1 {
         font-size: 2.8125rem; } }
   .portfolio-container hr {
+    background-color: #d4d4d4;
     margin-top: 0;
     margin-bottom: 1.5rem;
     width: 100%;
-    background-color: #a1a1a1;
-    opacity: .3; }
+    opacity: 0.4; }
   .portfolio-container .card {
     min-width: 14rem; }
     .portfolio-container .card .card-img-top {
@@ -46,7 +49,10 @@
       background-color: #ececec;
       padding-top: .7rem; }
       .portfolio-container .card .card-body .card-title {
-        font-size: 1.125rem; }
+        font-size: calc(1.2625rem + 0.15vw); }
+        @media (min-width: 1200px) {
+          .portfolio-container .card .card-body .card-title {
+            font-size: 1.375rem; } }
       .portfolio-container .card .card-body .ellipses {
         font-size: 1.125rem;
         line-height: 2;
@@ -72,11 +78,21 @@
       font-size: 2.8125rem; } }
 
 .exp-container hr {
+  background-color: #a1a1a1;
   margin-top: 0;
   margin-bottom: 1.5rem;
   width: 100%;
-  background-color: #a1a1a1;
-  opacity: .3; }
+  opacity: 0.4;
+  width: 100%; }
+
+.exp-container .exp-card {
+  background-color: #ececec;
+  border-radius: 10px; }
+  .exp-container .exp-card .title-col .title {
+    float: left; }
+  .exp-container .exp-card .title-col .date {
+    float: right;
+    padding-right: 15px; }
 
 .skills-container {
   background-color: #1d242f;
@@ -88,11 +104,11 @@
       .skills-container h1 {
         font-size: 3.125rem; } }
   .skills-container hr {
+    background-color: #f6f7fa;
     margin-top: 0;
     margin-bottom: 1.5rem;
     width: 100%;
-    background-color: #f6f7fa;
-    opacity: .3; }
+    opacity: 0.3; }
   .skills-container .tech-row {
     background-color: #232b38;
     padding: 1.5rem 1.5rem;
