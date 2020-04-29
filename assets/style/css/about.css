@@ -1,70 +1,115 @@
 @import url("https://fonts.googleapis.com/css2?family=Arapey:ital@0;1&family=Barlow:wght@200;300;400;500&display=swap");
-.title-row .name {
+.about-container .title-row .name {
   font-family: "Arapey", serif; }
 
-.title-row hr {
-  margin-top: .5rem;
-  margin-bottom: .5rem; }
+.about-container .title-row hr {
+  background-color: #a1a1a1;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  width: 100%;
+  opacity: 0.5; }
 
-.title-row .sub-title {
+.about-container .title-row .sub-title {
   margin-left: 10px;
   margin-top: 7px; }
 
-.title-row .title, .title-row .sub-title {
+.about-container .title-row .title, .about-container .title-row .sub-title {
   margin-bottom: 0;
   float: left; }
 
-.about-row .img-fluid {
+.about-container .about-row .img-fluid {
   background-color: #d4d4d4;
   border-radius: 50%;
   padding: 5px; }
 
-.portfolio-container h1 {
-  font-size: calc(1.40625rem + 1.875vw);
+.portfolio-container {
+  background-color: #30475e;
+  padding: 0 16vw; }
+  .portfolio-container h1 {
+    color: #f6f7fa;
+    font-size: calc(1.40625rem + 1.875vw);
+    font-family: "Arapey", serif; }
+    @media (min-width: 1200px) {
+      .portfolio-container h1 {
+        font-size: 2.8125rem; } }
+  .portfolio-container hr {
+    background-color: #d4d4d4;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    width: 100%;
+    opacity: 0.4; }
+  .portfolio-container .card {
+    min-width: 14rem; }
+    .portfolio-container .card .card-img-top {
+      position: relative;
+      width: 100%;
+      height: 18vw;
+      object-fit: cover; }
+    .portfolio-container .card .card-body {
+      background-color: #ececec;
+      padding-top: .7rem; }
+      .portfolio-container .card .card-body .card-title {
+        font-size: calc(1.2625rem + 0.15vw); }
+        @media (min-width: 1200px) {
+          .portfolio-container .card .card-body .card-title {
+            font-size: 1.375rem; } }
+      .portfolio-container .card .card-body .ellipses {
+        font-size: 1.125rem;
+        line-height: 2;
+        border-style: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        position: absolute;
+        right: -5px;
+        top: -15px;
+        color: #1d242f; }
+        .portfolio-container .card .card-body .ellipses:hover {
+          color: #c3641b; }
+    .portfolio-container .card .collapse i {
+      color: #30475e; }
+      .portfolio-container .card .collapse i:hover {
+        color: #c3641b; }
+
+.exp-container h1 {
+  font-size: calc(1.385rem + 1.62vw);
   font-family: "Arapey", serif; }
   @media (min-width: 1200px) {
-    .portfolio-container h1 {
-      font-size: 2.8125rem; } }
+    .exp-container h1 {
+      font-size: 2.6rem; } }
 
-.portfolio-container hr {
+.exp-container hr {
+  background-color: #a1a1a1;
   margin-top: 0;
   margin-bottom: 1.5rem;
-  width: 80%;
-  background-color: #a1a1a1;
-  opacity: .3; }
+  width: 100%;
+  opacity: 0.4;
+  width: 100%; }
 
-.portfolio-container .card {
-  min-width: 14rem; }
-  .portfolio-container .card .card-img-top {
-    position: relative;
-    width: 100%;
-    height: 18vw;
-    object-fit: cover; }
-  .portfolio-container .card .card-body {
-    background-color: #efefef;
-    padding-top: .7rem; }
-    .portfolio-container .card .card-body .card-title {
-      font-size: 1.125rem; }
-    .portfolio-container .card .card-body .ellipses {
-      font-size: 1.125rem;
-      line-height: 2;
-      border-style: none;
-      padding: 10px 20px;
-      cursor: pointer;
-      position: absolute;
-      right: -5px;
-      top: -15px; }
-      .portfolio-container .card .card-body .ellipses i {
-        color: #3e1d42; }
-        .portfolio-container .card .card-body .ellipses i:hover {
-          color: #fdc938; }
-  .portfolio-container .card .collapse i {
-    color: #323e9d; }
-    .portfolio-container .card .collapse i:hover {
-      color: #fdc938; }
+.exp-container .exp-card {
+  padding: 1.3rem 2rem;
+  background-color: #ececec;
+  border-radius: 10px; }
+  .exp-container .exp-card .title-col .place {
+    font-size: calc(1.295rem + 0.54vw);
+    font-family: "Arapey", serif; }
+    @media (min-width: 1200px) {
+      .exp-container .exp-card .title-col .place {
+        font-size: 1.7rem; } }
+  .exp-container .exp-card .title-col .title {
+    font-size: 1.2rem;
+    float: left; }
+  .exp-container .exp-card .title-col .date {
+    font-size: 1.1rem;
+    font-style: italic;
+    float: right;
+    padding-right: 15px; }
+  .exp-container .exp-card .resp-row .title {
+    font-size: 1.2rem; }
+  .exp-container .exp-card .resp-row ul {
+    font-size: 1.05rem; }
 
 .skills-container {
-  background-color: #3e1d42;
+  background-color: #1d242f;
   color: #f6f7fa; }
   .skills-container h1 {
     font-size: calc(1.4375rem + 2.25vw);
@@ -73,13 +118,13 @@
       .skills-container h1 {
         font-size: 3.125rem; } }
   .skills-container hr {
+    background-color: #f6f7fa;
     margin-top: 0;
     margin-bottom: 1.5rem;
-    width: 90%;
-    background-color: #f6f7fa;
-    opacity: .3; }
+    width: 100%;
+    opacity: 0.3; }
   .skills-container .tech-row {
-    background-color: #451f49;
+    background-color: #232b38;
     padding: 1.5rem 1.5rem;
     border-radius: 10px; }
     .skills-container .tech-row .title h2 {
@@ -92,14 +137,30 @@
       width: 10%;
       min-width: 70.52px;
       float: left;
-      background-color: #451f49;
+      background-color: #232b38;
       border-style: none; }
 
+@media only screen and (max-width: 992px) {
+  .portfolio-container .card .card-img-top {
+    height: 30vw; } }
+
 @media only screen and (max-width: 575px) {
-  .title-row {
+  .about-container .title-row {
     text-align: center; }
-    .title-row .title, .title-row .sub-title {
+    .about-container .title-row hr {
+      margin-bottom: .5rem; }
+    .about-container .title-row .title, .about-container .title-row .sub-title {
       float: none; }
-  .about-row .blurb {
+  .about-container .about-row .blurb {
     padding-top: 10px;
-    text-align: center; } }
+    text-align: center; }
+  .exp-container .exp-row, .exp-container .heading-row {
+    margin-left: 1rem;
+    margin-right: 1rem; }
+  .exp-container .exp-card {
+    padding: 1rem; }
+    .exp-container .exp-card .title-col .date {
+      float: left; }
+  .skills-container .tech-row {
+    margin-left: 1rem;
+    margin-right: 1rem; } }
