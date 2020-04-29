@@ -71,11 +71,11 @@
         color: #c3641b; }
 
 .exp-container h1 {
-  font-size: calc(1.40625rem + 1.875vw);
+  font-size: calc(1.385rem + 1.62vw);
   font-family: "Arapey", serif; }
   @media (min-width: 1200px) {
     .exp-container h1 {
-      font-size: 2.8125rem; } }
+      font-size: 2.6rem; } }
 
 .exp-container hr {
   background-color: #a1a1a1;
@@ -86,13 +86,27 @@
   width: 100%; }
 
 .exp-container .exp-card {
+  padding: 1.3rem 2rem;
   background-color: #ececec;
   border-radius: 10px; }
+  .exp-container .exp-card .title-col .place {
+    font-size: calc(1.295rem + 0.54vw);
+    font-family: "Arapey", serif; }
+    @media (min-width: 1200px) {
+      .exp-container .exp-card .title-col .place {
+        font-size: 1.7rem; } }
   .exp-container .exp-card .title-col .title {
+    font-size: 1.2rem;
     float: left; }
   .exp-container .exp-card .title-col .date {
+    font-size: 1.1rem;
+    font-style: italic;
     float: right;
     padding-right: 15px; }
+  .exp-container .exp-card .resp-row .title {
+    font-size: 1.2rem; }
+  .exp-container .exp-card .resp-row ul {
+    font-size: 1.05rem; }
 
 .skills-container {
   background-color: #1d242f;
@@ -131,10 +145,22 @@
     height: 30vw; } }
 
 @media only screen and (max-width: 575px) {
-  .title-row {
+  .about-container .title-row {
     text-align: center; }
-    .title-row .title, .title-row .sub-title {
+    .about-container .title-row hr {
+      margin-bottom: .5rem; }
+    .about-container .title-row .title, .about-container .title-row .sub-title {
       float: none; }
-  .about-row .blurb {
+  .about-container .about-row .blurb {
     padding-top: 10px;
-    text-align: center; } }
+    text-align: center; }
+  .exp-container .exp-row, .exp-container .heading-row {
+    margin-left: 1rem;
+    margin-right: 1rem; }
+  .exp-container .exp-card {
+    padding: 1rem; }
+    .exp-container .exp-card .title-col .date {
+      float: left; }
+  .skills-container .tech-row {
+    margin-left: 1rem;
+    margin-right: 1rem; } }

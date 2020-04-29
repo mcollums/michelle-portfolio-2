@@ -92,7 +92,7 @@
 
 .exp-container {
     h1 {
-        @include rfs(45px); // responsive font size mixin
+        @include rfs(2.6rem); // responsive font size mixin
         font-family: $font-serif;
     }
 
@@ -100,16 +100,35 @@
         @include hr-styled($med-grey, .4);
         width: 100%
     }
+
     .exp-card {
+        padding: 1.3rem 2rem;
         background-color: $light-grey;
         border-radius: 10px;
+
         .title-col {
+            .place {
+                @include rfs(1.7rem);
+                font-family: $font-serif;
+            }
             .title {
+                @include rfs(1.2rem);
                 float: left;
             }
             .date {
+                @include rfs(1.1rem);
+                font-style: italic;
                 float: right;
                 padding-right: 15px;
+            }
+        }
+
+        .resp-row {
+            .title{
+                @include rfs(1.2rem);
+            }
+            ul {
+                @include rfs(1.05rem);
             }
         }
     }
@@ -151,7 +170,7 @@
 
 @media only screen and (max-width: 992px) {
     .portfolio-container {
-        .card{
+        .card {
             .card-img-top {
                 height: 30vw;   
             }
@@ -159,19 +178,45 @@
     }
 }
 
-@media only screen and (max-width: 575px){
-    .title-row {
-        text-align: center;
-
-        .title , .sub-title {
-            float: none;
+@media only screen and (max-width: 575px) {
+    .about-container {
+        .title-row {
+            text-align: center;
+            hr {
+                margin-bottom: .5rem;
+            }
+            .title , .sub-title {
+                float: none;
+            }
+        }
+    
+        .about-row {
+            .blurb {
+                padding-top: 10px;
+                text-align: center;
+            }
         }
     }
 
-    .about-row {
-        .blurb {
-            padding-top: 10px;
-            text-align: center;
+    .exp-container {
+        .exp-row, .heading-row {
+            margin-left: 1rem;
+            margin-right: 1rem;
+        }
+        .exp-card {
+            padding: 1rem;
+            .title-col {
+                .date {
+                    float: left;
+                }
+            }
+        }
+    }
+
+    .skills-container {
+        .tech-row {
+            margin-left: 1rem;
+            margin-right: 1rem;
         }
     }
 }
