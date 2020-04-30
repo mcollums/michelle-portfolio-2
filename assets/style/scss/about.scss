@@ -184,8 +184,13 @@
             @include hr-styled($dark-main, .3)
         }
 
-        a {
-            font-size: 2.2rem;
+        .site {
+            @include rfs(15px);
+            margin-bottom: 0;
+        }
+    
+        i {
+            font-size: 3rem;
         }
     }
 
@@ -196,6 +201,21 @@
         .card {
             .card-img-top {
                 height: 30vw;   
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .contact-container {
+        padding: 3rem 0rem 0rem 0rem; 
+
+        .row {
+            margin-left: 1.5rem;
+            margin-right: 1.5rem;
+            .contact-card {
+                margin-left: 0rem;
+                margin-right: 0rem;
             }
         }
     }
@@ -243,16 +263,4 @@
         }
     }
 
-    .contact-container {
-        padding: 3rem 0rem 0rem 0rem; 
-
-        .row {
-            margin-left: 1rem;
-            margin-right: 1rem;
-            .contact-card {
-                margin-left: 0rem;
-                margin-right: 0rem;
-            }
-        }
-    }
 }

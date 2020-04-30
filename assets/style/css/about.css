@@ -155,12 +155,25 @@
       margin-bottom: 1.5rem;
       width: 100%;
       opacity: 0.3; }
-    .contact-container .contact-card a {
-      font-size: 2.2rem; }
+    .contact-container .contact-card .site {
+      font-size: 0.9375rem;
+      margin-bottom: 0; }
+    .contact-container .contact-card i {
+      font-size: 3rem; }
 
 @media only screen and (max-width: 992px) {
   .portfolio-container .card .card-img-top {
     height: 30vw; } }
+
+@media only screen and (max-width: 768px) {
+  .contact-container {
+    padding: 3rem 0rem 0rem 0rem; }
+    .contact-container .row {
+      margin-left: 1.5rem;
+      margin-right: 1.5rem; }
+      .contact-container .row .contact-card {
+        margin-left: 0rem;
+        margin-right: 0rem; } }
 
 @media only screen and (max-width: 575px) {
   .about-container .title-row {
@@ -181,12 +194,4 @@
       float: left; }
   .skills-container .tech-row {
     margin-left: 1rem;
-    margin-right: 1rem; }
-  .contact-container {
-    padding: 3rem 0rem 0rem 0rem; }
-    .contact-container .row {
-      margin-left: 1rem;
-      margin-right: 1rem; }
-      .contact-container .row .contact-card {
-        margin-left: 0rem;
-        margin-right: 0rem; } }
+    margin-right: 1rem; } }
