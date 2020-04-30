@@ -79,6 +79,9 @@
             }
         }
         .collapse {
+            .card-link {
+                font-size: 2.2rem;
+            }
             i {
             color: $main;
 
@@ -168,11 +171,51 @@
     }
 }
 
+.contact-container {
+    // background-image: url('../../images/paint-black.jpg');
+    padding: 10rem 0rem 0rem 0rem; 
+    .contact-card {
+        background-color: $light-grey;
+        border-radius: 10px;
+        padding: 2rem 3rem;
+        margin-top: 2rem;
+
+        hr {
+            @include hr-styled($dark-main, .3)
+        }
+
+        .site {
+            @include rfs(15px);
+            margin-bottom: 0;
+        }
+    
+        i {
+            font-size: 3rem;
+        }
+    }
+
+}
+
 @media only screen and (max-width: 992px) {
     .portfolio-container {
         .card {
             .card-img-top {
                 height: 30vw;   
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .contact-container {
+        padding: 3rem 0rem 0rem 0rem; 
+
+        .row {
+            margin-left: 1.5rem;
+            margin-right: 1.5rem;
+            .contact-card {
+                margin-left: 0rem;
+                margin-right: 0rem;
             }
         }
     }
@@ -219,4 +262,5 @@
             margin-right: 1rem;
         }
     }
+
 }

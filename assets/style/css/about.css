@@ -65,6 +65,8 @@
         color: #1d242f; }
         .portfolio-container .card .card-body .ellipses:hover {
           color: #c3641b; }
+    .portfolio-container .card .collapse .card-link {
+      font-size: 2.2rem; }
     .portfolio-container .card .collapse i {
       color: #30475e; }
       .portfolio-container .card .collapse i:hover {
@@ -140,9 +142,38 @@
       background-color: #232b38;
       border-style: none; }
 
+.contact-container {
+  padding: 10rem 0rem 0rem 0rem; }
+  .contact-container .contact-card {
+    background-color: #ececec;
+    border-radius: 10px;
+    padding: 2rem 3rem;
+    margin-top: 2rem; }
+    .contact-container .contact-card hr {
+      background-color: #1d242f;
+      margin-top: 0;
+      margin-bottom: 1.5rem;
+      width: 100%;
+      opacity: 0.3; }
+    .contact-container .contact-card .site {
+      font-size: 0.9375rem;
+      margin-bottom: 0; }
+    .contact-container .contact-card i {
+      font-size: 3rem; }
+
 @media only screen and (max-width: 992px) {
   .portfolio-container .card .card-img-top {
     height: 30vw; } }
+
+@media only screen and (max-width: 768px) {
+  .contact-container {
+    padding: 3rem 0rem 0rem 0rem; }
+    .contact-container .row {
+      margin-left: 1.5rem;
+      margin-right: 1.5rem; }
+      .contact-container .row .contact-card {
+        margin-left: 0rem;
+        margin-right: 0rem; } }
 
 @media only screen and (max-width: 575px) {
   .about-container .title-row {

@@ -22,9 +22,3 @@ $font-dark: #12161d;
     width: 100%;
     opacity: $opacity-val;
 }
-
-@mixin bottom-col() {
-    float: none;
-    display: table-cell;
-    vertical-align: bottom;
-}
