@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootswatch, Bootstrap, FontAwesome and Custom CSS -->
+    <script src="https://kit.fontawesome.com/5dec566d84.js" crossorigin="anonymous"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" text="text/css" href="assets/style/bootstrap.min.css">
+    <link rel="stylesheet" text="text/css" href="assets/style/css/global.css">
+    <link rel="stylesheet" text="text/css" href="assets/style/css/index.css">
+    <link rel="stylesheet" text="text/css" href="assets/style/css/media.css">
+
+    <title>Collums | Home</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="./index.html">DevMatch</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav"
+            aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="main-nav">
+            <ul class="navbar-nav ml-auto d-flex justify-content-around">
+                <li class="nav-item active">
+                    <a class="nav-link" href="./about.html">About.<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./portfolio.html">Projects.</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./contact.html">Contact.</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="profile-section container my-4">
+        <article class="row">
+            <!-- Offset Column-->
+            <div class="offset-lg-3 offset-md-2 offset-sm-1 offset-1"></div>
+            <!-- Profile Card Column -->
+            <div class="profile-img p-0 col-lg-6 col-md-8 col-sm-10 col-10">
+                <img src="./assets/images/mc-01.png" class="img-fluid" alt="user's profile picture">
+                <div class="profile-overlay">
+                    <div class="wrapper">
+                        <h2 class="prof-name"><strong>Michelle Collums</strong></h2>
+                        <h4 class="prof-job">Full-Stack Web Developer</h4>
+                        <h5 class="prof-tagline">(and cat parent).</h5>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <div class="profile-buttons row justify-content-center text-center">
+            <div class="p-0 col-sm-3 col-3 ">
+                <button type="button" class="btn btn-light">
+                    <span class="no fas fa-times"></span>
+                </button>
+            </div>
+            <div class="p-0 col-sm-3 col-3">
+                <button type="button" class="btn btn-light">
+                    <span class="yes far fa-heart" data-toggle="modal" data-target="#match-modal"></span>
+                </button>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Match Modal -->
+    <div class="modal fade" id="match-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row justify-content-center">
+                        <h1> It's a Match! </h1>
+                    </div>
+                    <div class="row justify-content-end pt-3">
+                        <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-outline-primary mx-3">Profile</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="pt-4">
+        <div class="container-fluid text-center">
+            <div class="row justify-content-around">
+
+                <!-- Links -->
+                <div class="col-3">
+                    <h5 class="text-uppercase">Helpful Links</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="https://github.com/mcollums" target="_blank">GitHub</a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/collums/" target="_blank">LinkedIn</a>
+                        </li>
+                        <li>
+                            <a href="mailto: collumsmichelle@gmail.com">Send Email</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Copyright -->
+            <div class="text-center py-3">© 2020 Copyright: Michelle Collums
+            </div>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+    <script src="./assets/script/index.js"></script>
+
+
+</body>
+
+</html>

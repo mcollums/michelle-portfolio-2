@@ -172,8 +172,11 @@
 }
 
 .contact-container {
-    // background-image: url('../../images/paint-black.jpg');
-    padding: 10rem 0rem 0rem 0rem; 
+    background-image: url('../../images/gradient-bg.png');
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    padding: 10rem 0rem 10rem 0rem; 
+
     .contact-card {
         background-color: $light-grey;
         border-radius: 10px;
@@ -205,6 +208,7 @@
         }
     }
 }
+
 
 @media only screen and (max-width: 768px) {
     .contact-container {
