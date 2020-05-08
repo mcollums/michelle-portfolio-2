@@ -143,7 +143,10 @@
       border-style: none; }
 
 .contact-container {
-  padding: 10rem 0rem 0rem 0rem; }
+  background-image: url("../../images/gradient-bg.png");
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  padding: 10rem 0rem 10rem 0rem; }
   .contact-container .contact-card {
     background-color: #ececec;
     border-radius: 10px;

@@ -20,7 +20,13 @@ body {
     position: relative;
 
     .navbar-brand {
+        padding-right: 3px;
+        padding-left: 3px;
         margin-left: 10px;
+        display: inline-block;
+        img {
+            width: 4vw;
+        }
     }
 
     button {
